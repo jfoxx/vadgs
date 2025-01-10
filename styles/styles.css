@@ -275,6 +275,28 @@ body.two-col {
     .section:first-of-type {
       width: 30%;
       margin-left: calc((100% - var(--page-width))/2);
+
+      .default-content-wrapper {
+        ul {
+          list-style: none;
+          margin-left: 0;
+          padding-inline-start: 0;
+          width: 85%;
+    
+          li {
+            background-color: #8d949a;
+            border: 1px solid #ddd;
+            color: white;
+            padding: 5px 10px 6px;
+    
+            a {
+              color: white;
+              text-decoration: none;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
     }
 
     .section:last-of-type {
