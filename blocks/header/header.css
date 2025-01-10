@@ -3,7 +3,6 @@ header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
   z-index: 2;
-  position: fixed;
 }
 
 header nav {
@@ -154,14 +153,9 @@ header nav .nav-brand .default-content-wrapper{
     grid-area: image;
   }
 
-  > p:nth-of-type(2) {
-    grid-area: text;
-    font-weight: 400;
-  }
-
   >p:last-of-type {
     grid-area: text;
-    display: none;
+    font-weight: 400;
   }
 }
 
