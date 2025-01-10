@@ -22,13 +22,13 @@ function closeOnEscape(e) {
 }
 
 function createHeaderBar() {
-    var header = document.querySelector('header')
-    var script = document.createElement('script');
-    script.src = 'https://www.developer.virginia.gov/media/developer/resources/branding-bar/brandingbar.php';
-    script.setAttribute('aaname', 'Virginia Department of General Services');
-    script.setAttribute('aatheme', 'aatheme-black');
-    script.setAttribute('data-item', 'va_aabrandingbar');
-    header.append(script);
+  const header = document.querySelector('header');
+  const script = document.createElement('script');
+  script.src = 'https://www.developer.virginia.gov/media/developer/resources/branding-bar/brandingbar.php';
+  script.setAttribute('aaname', 'Virginia Department of General Services');
+  script.setAttribute('aatheme', 'aatheme-black');
+  script.setAttribute('data-item', 'va_aabrandingbar');
+  header.append(script);
 }
 
 function closeOnFocusLost(e) {
