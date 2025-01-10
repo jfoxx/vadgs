@@ -182,6 +182,32 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+      {
+        "component": "button",
+        "name": "button",
+        "value": "",
+        "label": "Button"
+      }
+    ]
+  },
+  {
+    "id": "page-metadata",
+    "fields" : [
+      {
+        "component": "select",
+        "name" : "template",
+        "label": "Template",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "Interior",
+            "value": "two-col"
+          }
+        ]
       }
     ]
   }
