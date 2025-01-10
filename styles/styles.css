@@ -38,6 +38,9 @@
 
   /* nav height */
   --nav-height: 138px;
+
+  /* page width */
+  --page-width: 100%;
 }
 
 /* fallback fonts */
@@ -67,6 +70,13 @@
     --heading-font-size-m: 22px;
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
+  }
+}
+
+@media (width >= 1200px) {
+  :root {
+    /* page width */
+    --page-width: 1200px;
   }
 }
 
@@ -254,4 +264,22 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+/* templates */
+
+body.two-col {
+  main {
+    display: flex;
+
+    .section:first-of-type {
+      width: 30%;
+      margin-left: calc((100% - var(--page-width))/2);
+    }
+
+    .section:last-of-type {
+      width: 65%;
+      margin-right: calc((100% - var(--page-width))/2);
+    }
+  }
 }
